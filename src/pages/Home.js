@@ -89,13 +89,13 @@ const Home = (props) => {
                 <div className="container">
 
                     <a href="#" className="logo">
-                        <img src="/assets/images/logo.svg" width="162" height="50" alt="EduWeb logo"/></a>
+                        <img src={process.env.PUBLIC_URL+process.env.PUBLIC_URL+"/assets/images/logo.svg"} width="162" height="50" alt="EduWeb logo"/></a>
 
                     <nav className="navbar" data-navbar>
 
                         <div className="wrapper">
                             <a href="#" className="logo">
-                                <img src="/assets/images/logo.svg" width="162" height="50" alt="EduWeb logo"/></a>
+                                <img src={process.env.PUBLIC_URL+"/assets/images/logo.svg"} width="162" height="50" alt="EduWeb logo"/></a>
 
                             <button className="nav-close-btn" aria-label="close menu" data-nav-toggler>
                                 <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -194,7 +194,7 @@ const Home = (props) => {
 
                                 <div className="img-holder one" style={{width: "270", height: "300"}}>
                                     <img
-                                        src="/assets/images/hero-banner-1.jpg"
+                                        src={process.env.PUBLIC_URL+"/assets/images/hero-banner-1.jpg"}
                                         width="270"
                                         height="300"
                                         alt="hero banner"
@@ -203,7 +203,7 @@ const Home = (props) => {
 
                                 <div className="img-holder two" style={{width: "240", height: "370"}}>
                                     <img
-                                        src="/assets/images/hero-banner-2.jpg"
+                                        src={process.env.PUBLIC_URL+"/assets/images/hero-banner-2.jpg"}
                                         width="240"
                                         height="370"
                                         alt="hero banner"
@@ -211,14 +211,14 @@ const Home = (props) => {
                                 </div>
 
                                 <img
-                                    src="/assets/images/hero-shape-1.svg"
+                                    src={process.env.PUBLIC_URL+"/assets/images/hero-shape-1.svg"}
                                     width="380"
                                     height="190"
                                     alt=""
                                     className="shape hero-shape-1"/>
 
                                 <img
-                                    src="/assets/images/hero-shape-2.png"
+                                    src={process.env.PUBLIC_URL+"/assets/images/hero-shape-2.png"}
                                     width="622"
                                     height="551"
                                     alt=""
@@ -252,7 +252,7 @@ const Home = (props) => {
                                     <div className="category-card category-card1">
                                         <div className="card-icon">
                                             <img
-                                                src="/assets/images/category-1.svg"
+                                                src={process.env.PUBLIC_URL+"/assets/images/category-1.svg"}
                                                 width="40"
                                                 height="40"
                                                 loading="lazy"
@@ -278,7 +278,7 @@ const Home = (props) => {
 
                                         <div className="card-icon">
                                             <img
-                                                src="/assets/images/category-2.svg"
+                                                src={process.env.PUBLIC_URL+"/assets/images/category-2.svg"}
                                                 width="40"
                                                 height="40"
                                                 loading="lazy"
@@ -304,7 +304,7 @@ const Home = (props) => {
 
                                         <div className="card-icon">
                                             <img
-                                                src="/assets/images/category-3.svg"
+                                                src={process.env.PUBLIC_URL+"/assets/images/category-3.svg"}
                                                 width="40"
                                                 height="40"
                                                 loading="lazy"
@@ -330,7 +330,7 @@ const Home = (props) => {
 
                                         <div className="card-icon">
                                             <img
-                                                src="/assets/images/category-4.svg"
+                                                src={process.env.PUBLIC_URL+"/assets/images/category-4.svg"}
                                                 width="40"
                                                 height="40"
                                                 loading="lazy"
@@ -365,7 +365,7 @@ const Home = (props) => {
 
                                 <div className="img-holder" style={{width: "520", height: "370"}}>
                                     <img
-                                        src="/assets/images/about-banner.jpg"
+                                        src={process.env.PUBLIC_URL+"/assets/images/about-banner.jpg"}
                                         width="520"
                                         height="370"
                                         loading="lazy"
@@ -374,7 +374,7 @@ const Home = (props) => {
                                 </div>
 
                                 <img
-                                    src="/assets/images/about-shape-1.svg"
+                                    src={process.env.PUBLIC_URL+"/assets/images/about-shape-1.svg"}
                                     width="360"
                                     height="420"
                                     loading="lazy"
@@ -382,7 +382,7 @@ const Home = (props) => {
                                     className="shape about-shape-1"/>
 
                                 <img
-                                    src="/assets/images/about-shape-2.svg"
+                                    src={process.env.PUBLIC_URL+"/assets/images/about-shape-2.svg"}
                                     width="371"
                                     height="220"
                                     loading="lazy"
@@ -390,7 +390,7 @@ const Home = (props) => {
                                     className="shape about-shape-2"/>
 
                                 <img
-                                    src="/assets/images/about-shape-3.png"
+                                    src={process.env.PUBLIC_URL+"/assets/images/about-shape-3.png"}
                                     width="722"
                                     height="528"
                                     loading="lazy"
@@ -437,7 +437,7 @@ const Home = (props) => {
                                 </ul>
 
                                 <img
-                                    src="/assets/images/about-shape-4.svg"
+                                    src={process.env.PUBLIC_URL+"/assets/images/about-shape-4.svg"}
                                     width="100"
                                     height="100"
                                     loading="lazy"
@@ -465,7 +465,7 @@ const Home = (props) => {
 
                                         <figure className="card-banner img-holder" style={{width: "370" , height: "220"}}>
                                             <img
-                                                src="/assets/images/course-1.jpg"
+                                                src={process.env.PUBLIC_URL+"/assets/images/course-1.jpg"}
                                                 width="370"
                                                 height="220"
                                                 loading="lazy"
@@ -529,7 +529,7 @@ const Home = (props) => {
 
                                         <figure className="card-banner img-holder" style={{width: "370" , height: "220"}}>
                                             <img
-                                                src="/assets/images/course-2.jpg"
+                                                src={process.env.PUBLIC_URL+"/assets/images/course-2.jpg"}
                                                 width="370"
                                                 height="220"
                                                 loading="lazy"
@@ -593,7 +593,7 @@ const Home = (props) => {
 
                                         <figure className="card-banner img-holder" style={{width: "370", height: "220"}}>
                                             <img
-                                                src="/assets/images/course-3.jpg"
+                                                src={process.env.PUBLIC_URL+"/assets/images/course-3.jpg"}
                                                 width="370"
                                                 height="220"
                                                 loading="lazy"
@@ -676,7 +676,7 @@ const Home = (props) => {
                                 <div
                                     className="video-banner img-holder has-after">
                                     <img
-                                        src="/assets/images/video-banner.jpg"
+                                        src={process.env.PUBLIC_URL+"/assets/images/video-banner.jpg"}
                                         width="970"
                                         height="550"
                                         loading="lazy"
@@ -689,7 +689,7 @@ const Home = (props) => {
                                 </div>
 
                                 <img
-                                    src="/assets/images/video-shape-1.png"
+                                    src={process.env.PUBLIC_URL+"/assets/images/video-shape-1.png"}
                                     width="1089"
                                     height="605"
                                     loading="lazy"
@@ -697,7 +697,7 @@ const Home = (props) => {
                                     className="shape video-shape-1"/>
 
                                 <img
-                                    src="/assets/images/video-shape-2.png"
+                                    src={process.env.PUBLIC_URL+"/assets/images/video-shape-2.png"}
                                     width="158"
                                     height="174"
                                     loading="lazy"
@@ -775,7 +775,7 @@ const Home = (props) => {
                                             className="card-banner img-holder has-after"
                                             style={{width: "370" , height: "370"}}>
                                             <img
-                                                src="/assets/images/blog-1.jpg"
+                                                src={process.env.PUBLIC_URL+"/assets/images/blog-1.jpg"}
                                                 width="370"
                                                 height="370"
                                                 loading="lazy"
@@ -827,7 +827,7 @@ const Home = (props) => {
                                             className="card-banner img-holder has-after"
                                             style={{width: "370" , height: "370"}}>
                                             <img
-                                                src="/assets/images/blog-2.jpg"
+                                                src={process.env.PUBLIC_URL+"/assets/images/blog-2.jpg"}
                                                 width="370"
                                                 height="370"
                                                 loading="lazy"
@@ -879,7 +879,7 @@ const Home = (props) => {
                                             className="card-banner img-holder has-after"
                                             style={{width: "370" ,height: "370"}}>
                                             <img
-                                                src="/assets/images/blog-3.jpg"
+                                                src={process.env.PUBLIC_URL+"/assets/images/blog-3.jpg"}
                                                 width="370"
                                                 height="370"
                                                 loading="lazy"
@@ -927,7 +927,7 @@ const Home = (props) => {
                             </ul>
 
                             <img
-                                src="/assets/images/blog-shape.png"
+                                src={process.env.PUBLIC_URL+"/assets/images/blog-shape.png"}
                                 width="186"
                                 height="186"
                                 loading="lazy"
@@ -949,7 +949,7 @@ const Home = (props) => {
     <div className="footer-brand">
 
       <a href="#" className="logo">
-        <img src="/assets/images/logo-light.svg" width="162" height="50" alt="EduWeb logo" />
+        <img src={process.env.PUBLIC_URL+"/assets/images/logo-light.svg"} width="162" height="50" alt="EduWeb logo" />
       </a>
 
       <p className="footer-brand-text">
