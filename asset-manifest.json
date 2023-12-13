@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/forutechnologies/static/css/main.15d467df.css",
-    "main.js": "/forutechnologies/static/js/main.cd0cee86.js",
+    "main.js": "/forutechnologies/static/js/main.4c11b53c.js",
     "static/js/787.6924c28a.chunk.js": "/forutechnologies/static/js/787.6924c28a.chunk.js",
     "index.html": "/forutechnologies/index.html",
     "main.15d467df.css.map": "/forutechnologies/static/css/main.15d467df.css.map",
-    "main.cd0cee86.js.map": "/forutechnologies/static/js/main.cd0cee86.js.map",
+    "main.4c11b53c.js.map": "/forutechnologies/static/js/main.4c11b53c.js.map",
     "787.6924c28a.chunk.js.map": "/forutechnologies/static/js/787.6924c28a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15d467df.css",
-    "static/js/main.cd0cee86.js"
+    "static/js/main.4c11b53c.js"
   ]
 }
