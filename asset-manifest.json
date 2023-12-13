@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/forutechnologies/static/css/main.15d467df.css",
-    "main.js": "/forutechnologies/static/js/main.b7155161.js",
-    "static/js/787.6924c28a.chunk.js": "/forutechnologies/static/js/787.6924c28a.chunk.js",
-    "index.html": "/forutechnologies/index.html",
-    "main.15d467df.css.map": "/forutechnologies/static/css/main.15d467df.css.map",
-    "main.b7155161.js.map": "/forutechnologies/static/js/main.b7155161.js.map",
-    "787.6924c28a.chunk.js.map": "/forutechnologies/static/js/787.6924c28a.chunk.js.map"
+    "main.css": "/static/css/main.15d467df.css",
+    "main.js": "/static/js/main.49c7f5ab.js",
+    "static/js/787.6924c28a.chunk.js": "/static/js/787.6924c28a.chunk.js",
+    "index.html": "/index.html",
+    "main.15d467df.css.map": "/static/css/main.15d467df.css.map",
+    "main.49c7f5ab.js.map": "/static/js/main.49c7f5ab.js.map",
+    "787.6924c28a.chunk.js.map": "/static/js/787.6924c28a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15d467df.css",
-    "static/js/main.b7155161.js"
+    "static/js/main.49c7f5ab.js"
   ]
 }
