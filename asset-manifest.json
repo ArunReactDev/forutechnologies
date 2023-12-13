@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ForUTechnologies/static/css/main.15d467df.css",
-    "main.js": "/ForUTechnologies/static/js/main.23cc15c9.js",
-    "static/js/787.6924c28a.chunk.js": "/ForUTechnologies/static/js/787.6924c28a.chunk.js",
-    "index.html": "/ForUTechnologies/index.html",
-    "main.15d467df.css.map": "/ForUTechnologies/static/css/main.15d467df.css.map",
-    "main.23cc15c9.js.map": "/ForUTechnologies/static/js/main.23cc15c9.js.map",
-    "787.6924c28a.chunk.js.map": "/ForUTechnologies/static/js/787.6924c28a.chunk.js.map"
+    "main.css": "/forutechnologies/static/css/main.15d467df.css",
+    "main.js": "/forutechnologies/static/js/main.cd0cee86.js",
+    "static/js/787.6924c28a.chunk.js": "/forutechnologies/static/js/787.6924c28a.chunk.js",
+    "index.html": "/forutechnologies/index.html",
+    "main.15d467df.css.map": "/forutechnologies/static/css/main.15d467df.css.map",
+    "main.cd0cee86.js.map": "/forutechnologies/static/js/main.cd0cee86.js.map",
+    "787.6924c28a.chunk.js.map": "/forutechnologies/static/js/787.6924c28a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15d467df.css",
-    "static/js/main.23cc15c9.js"
+    "static/js/main.cd0cee86.js"
   ]
 }
