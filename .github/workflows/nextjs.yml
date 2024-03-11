@@ -66,13 +66,8 @@ jobs:
         with:
           name: nextjs-build
           path: ./.next
-      - name: Set artifact ID output
-        run: echo "::set-output name=artifact_id::${{ steps.upload.outputs.uploaded-artifact-id }}"
 
   deploy:
-      environment:
-        name: github-pages
-        url: ${{ steps.deployment.outputs.page_url }}
       runs-on: ubuntu-latest
       needs: build
       steps:
