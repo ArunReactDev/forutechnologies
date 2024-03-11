@@ -67,21 +67,23 @@ jobs:
           name: nextjs-build
           path: ./.next
       - name: Set artifact ID output
-        run: echo "::set-output name=artifact_id::${{ steps.upload.outputs.artifact_id }}"
+        run: echo "::set-output name=artifact_id::${{ steps.upload.outputs.uploaded-artifact-id }}"
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: List artifacts
+      - name: Get artifact ID
+        id: get_artifact_id
         run: |
-          curl -s "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" -H "Authorization: Bearer ${ACTIONS_RUNTIME_TOKEN}" | jq '.artifacts[] | .name, .id'
+          ARTIFACT_ID=$(curl -s "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" | jq -r '.artifacts[] | select(.name == "nextjs-build") | .id')
+          echo $ARTIFACT_ID > artifact_id.txt
+      
       - name: Download artifact
-        run: |
-          artifact_id=$(curl -s "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" -H "Authorization: Bearer ${ACTIONS_RUNTIME_TOKEN}" | jq -r '.artifacts[] | select(.name == "nextjs-build") | .id')
-          echo "Artifact ID: $artifact_id"
-          curl -LJO "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/artifacts/$artifact_id/zip" -H "Authorization: Bearer ${ACTIONS_RUNTIME_TOKEN}"
-          unzip $artifact_id.zip -d ./.next
+        uses: actions/download-artifact@v2
+        with:
+          name: nextjs-build
+          path: ./.next
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
